@@ -1,0 +1,44 @@
+
+
+.head{
+	background-color:#324851;
+	color:#fff;
+	border-color: #080808;
+	min-height: 50px;
+	border: 1px solid transparent;
+    text-align: center;
+    font-size: 55px;
+	}
+    
+.head2{
+	background-color:#94a291;
+	color:#fff;
+	border-color: #080808;
+	min-height: 50px;
+	border: 1px solid transparent;    
+    font-size: 40px;
+    width:75.6%;
+	}
+
+    
+.art{
+      width:25.1%;
+      color:#8D230F;
+      border: 1px solid #606477;
+      float:left; 
+      height: 200px;
+      background:#fff;
+      text-align:center;
+      font-size:20px
+      }
+      
+      
+.aside{
+        width:24%;
+        float:right;
+        border: 1px solid black;
+        font-size:30px;
+        margin-top:-51px;
+        height:116.3%;
+        }
+      
