@@ -1,5 +1,3 @@
-
-
 .head{
 	background-color:#324851;
 	color:#fff;
@@ -40,5 +38,16 @@
         font-size:30px;
         margin-top:-51px;
         height:116.3%;
-        }
-      
+	background:#8e7176;
+}
+
+.ads{
+	border-bottom: 2px solid black;
+	text-align:center;
+	
+	}
+
+.content{
+         
+	color:black;
+         }
