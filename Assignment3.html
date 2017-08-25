@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		2D
+	</title>
+    <style>
+    h3{text-align:center;}
+    body{background:#b13349;}
+</style>
+</head>
+<body>
+<p><h3>Please select the 2d shape of which you want to calculate the Area and Perimeter.</h3></p>
+<table align="center">
+	<tr>
+		<td><button onclick="showCircle()">Circle</button></td>
+		<td><button onclick="showTriangle()">Triangle</button></td>
+		<td><button onclick="showSquare()">Square</button></td>
+		<td><button onclick="showRectangle()">Rectangle</button></td>
+	</tr>
+</table>
+		<br><br>
+		<p id="input"></p>
+		<p id="output"></p>
+
+<script>
+
+	function showCircle() {
+		document.getElementById("output").innerHTML = "";
+		document.getElementById("input").innerHTML = "<center><img src=\"circle.jpg\" width=\"200\" height=\"200\"><br><br><br>Enter Radius:<input type=\"number\" id=\"radius\" value=0>&nbsp&nbsp<input type=\"button\" value=\"Submit\" onclick=\"areaCircle();\" > </center>";
+	}
+	function areaCircle(){
+		var rad = document.getElementById("radius").value;
+		document.getElementById("output").innerHTML = "<center> Area of Circle:<input type=\"number\" value="+rad*rad*(22/7) +"><br><br>Perimeter of Circle:<input type=\"number\" value="+2*(22/7)*rad+"></center>";
+	}
+
+	function showTriangle() {
+		document.getElementById("output").innerHTML = "";
+		document.getElementById("input").innerHTML = "<center><img src=\"triangle.png\" width=\"200\" height=\"200\"><br><br><br>Enter base:&nbsp&nbsp&nbsp<input type=\"number\" id=\"base\" value=0>&nbsp&nbsp<input type=\"button\" value=\"Submit\" onclick=\"areaTriangle();\" ></center>";
+		
+	}
+	function areaTriangle(){
+		var base = document.getElementById("base").value;
+		document.getElementById("output").innerHTML = "<center>Area of Triangle:<input type=\"number\" value="+base*(1/2)*(1.7/2)*base +"><br><br>Perimeter of Triangle:<input type=\"number\" value="+3*base+"></center>";
+	}
+
+	function showSquare() {
+		document.getElementById("output").innerHTML = "";
+		document.getElementById("input").innerHTML = "<center><img src=\"square.png\" width=\"200\" height=\"200\"><br><br><br>Enter side length:<input type=\"number\" id=\"length\" value=0>&nbsp&nbsp<input type=\"button\" value=\"Submit\" onclick=\"areaSquare();\"></center>";
+		
+	}
+	function areaSquare(){
+		var length = document.getElementById("length").value;
+		document.getElementById("output").innerHTML = "<center>Area of Square:<input type=\"number\" value="+ length*length +"><br><br>Perimeter of Square:<input type=\"number\" value="+4*length+"></center>";
+	}
+
+	function showRectangle() {
+		document.getElementById("output").innerHTML = "";
+		document.getElementById("input").innerHTML = "<center><img src=\"rect.png\" width=\"200\" height=\"200\"><br><br><br>Enter lenght:<input type=\"number\" id=\"side1\" value=0><br><br>Enter width:&nbsp<input type=\"number\" id=\"side2\" value=0>&nbsp&nbsp<input type=\"button\" value=\"Submit\" onclick=\"areaRectangle();\" ></center>";
+			
+	}
+	function areaRectangle(){
+		var base = document.getElementById("side1").value;
+		var height = document.getElementById("side2").value;
+		document.getElementById("output").innerHTML = "<center>Area of Rectangle:<input type=\"number\" value="+base*height +"><br><br>Perimeter of Rectangle:<input type=\"number\" value="+(2*height+ 2*base) +"></center>";	
+	}
+"</center>"
+</script>
+
+</body>
+</html>
